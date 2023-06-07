@@ -1,0 +1,22 @@
+.container.container-fluid {
+    padding: 3rem;
+}
+
+.table-responsive {
+    text-align: center;
+    border-radius: 1rem;
+    overflow-x: auto;
+
+}
+
+.container-sm {
+    width: 100%;
+    max-width: 576px;
+    margin: 0 auto;
+  }
+    
+  .custom-table th,
+  .custom-table td {
+    border: none; 
+  }
+  
