@@ -11,7 +11,7 @@ function Getmovies() {
 
     useEffect(() => {
         try {
-            fetch("http://localhost:4000/getmovies", {
+            fetch("https://movieserver-capp.onrender.com/getmovies", {
                 method: "GET",
                 headers: {
                     "Access-Control-Allow-Origin": true,
@@ -36,7 +36,7 @@ function Getmovies() {
             return;
         }
         try {
-            fetch("http://localhost:4000/movies/" + id, {
+            fetch("https://movieserver-capp.onrender.com/movies/" + id, {
                 method: "DELETE",
                 headers: {
                     "Access-Control-Allow-Origin": true,

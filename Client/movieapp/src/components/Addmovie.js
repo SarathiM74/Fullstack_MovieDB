@@ -15,7 +15,7 @@ function Addmovie() {
     const navigate = useNavigate();
     useEffect(() => {
         if (id !== undefined) {
-            fetch("http://localhost:4000/getmovies/", {
+            fetch("https://movieserver-capp.onrender.com/getmovies/", {
                 method: "GET",
                 headers: {
                     "Access-Control-Allow-Origin": true,
@@ -43,7 +43,7 @@ function Addmovie() {
     const handleclick = () => {
         if (id === "undefined") {
             try {
-                fetch("http://localhost:4000/movies", {
+                fetch("https://movieserver-capp.onrender.com/movies", {
                     method: "POST",
                     headers: {
                         "Access-Control-Allow-Origin": true,
@@ -67,7 +67,7 @@ function Addmovie() {
             }
         }
         else {
-            fetch("http://localhost:4000/movies/" + id, {
+            fetch("https://movieserver-capp.onrender.com/movies/" + id, {
                 method: "PUT",
                 headers: {
                     "Access-Control-Allow-Origin": true,
